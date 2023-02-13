@@ -48,7 +48,7 @@
         "tags": ["Category"],
         "summary": "List all categories",
         "description": "List all categories",
-        "response": {
+        "responses": {
           "200": {
             "description": "success",
             "content": {
