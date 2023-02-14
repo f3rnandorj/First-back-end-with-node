@@ -20,12 +20,7 @@ services:
       - "3333:3333"
     volumes:
       - .:/usr/app
-    links: 
-      - database
-    depends_on:
-      - database
-
-
+  
 volumes:
     pgdata:
       driver: local
