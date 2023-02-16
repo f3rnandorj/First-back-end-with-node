@@ -2,7 +2,7 @@ import { Column, CreateDateColumn, Entity, PrimaryColumn } from "typeorm";
 import { v4 as uuidV4 } from "uuid";
 
 @Entity("users")
-class Users {
+class User {
   @PrimaryColumn()
   id: string;
   @Column()
@@ -27,4 +27,4 @@ class Users {
   }
 }
 
-export { Users };
+export { User };
