@@ -16,12 +16,15 @@ services:
   app:
     build: .
     container_name: rentx
+    command: npm run dev
     restart: always
     ports:
       - "3333:3333"
     volumes:
       - .:/usr/app
       - /usr/app/node_modules
+    depends_on:
+      - database
   
 volumes:
     pgdata:
