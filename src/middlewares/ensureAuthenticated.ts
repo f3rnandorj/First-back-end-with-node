@@ -35,6 +35,10 @@ export function ensureAuthenticate(
       throw new AppError("User does not exist", 401);
     }
 
+    req.user = {
+      id: user_id,
+    };
+
     next();
   } catch (error) {
     throw new AppError("Invalid Token!", 401);

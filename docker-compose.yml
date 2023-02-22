@@ -22,7 +22,9 @@ services:
       - .:/usr/app
       - /usr/app/node_modules
     depends_on:
-      - database 
+      - database_ignite
+    command: npm run dev
+ 
       
 volumes:
   pgdata:
